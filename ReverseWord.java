@@ -6,6 +6,16 @@ class Main{
     void ReverseWordCode(String str1){
         String[] words = str1.split(" ");
         System.out.println(Arrays.toString(words));
+
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = words.length-1; i>=0;i-- ){
+            sb.append(words[i]);
+            sb.append(" ");
+        }
+
+        String result = sb.toString().trim();
+        System.out.println("Result is: " + result);
     }
 }
 
