@@ -7,6 +7,7 @@ class LengthCount{
         int count =0;
 
         for(char ch: str.toCharArray()){
+            System.out.print(ch);
             count+=1;
         }
 
@@ -24,6 +25,7 @@ public class StringLength {
         System.out.println("Enter the string whose length you want to count");
         String str = sc.nextLine();
         LengthCount.Count(str);
+        sc.close();
 
 
     }
